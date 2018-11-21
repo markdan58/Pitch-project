@@ -18,7 +18,7 @@ user loads the website and he/she logs into the account or reigisters if he/she 
 There are currently no known bugs for the app.
 
 ## Technologies Used
-1. Python 3.6 was u
+1. Python 3.6 was used to develop the app.
 2. Ubuntu terminal used to test the codes and run them.
 3. Virtual studio for writing of the codes.
 4. Flask framework was used to structure the app.
