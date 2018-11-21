@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-primary">
+    {{ message}}
+</div>
+{% endfor %}
+<div class="container">
+    <div class="jumbotron">
+        {{wtf.quick_form(pitch_form)}}
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        {% for pitch in pitch %}
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="title">{{ pitch.actual_pitch }}..</h4>
+                                            <a href="/comments/{{pitch.id}}" class="btn btn-primary">Comments</a>
+                                            <a class="btn btn-success text-center" href="/pitch/comments/new/{{pitch.id}}">Add
+                                                Comment</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% for pitch in pickuplines %}
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="title">{{ pitch.actual_pitch }}..
+                                            </h4>
+                                            <a href="/comments/{{pitch.id}}" class="btn btn-primary">Comments</a>
+                                            <a class="btn btn-success text-center" href="/pitch/comments/new/{{pitch.id}}">Add
+                                                Comment</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        {% for pitch in interview %}
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="title">{{ pitch.actual_pitch }}..
+                                            </h4>
+                                            <a href="/comments/{{pitch.id}}" class="btn btn-primary">Comments</a>
+                                            <a class="btn btn-success text-center" href="/pitch/comments/new/{{pitch.id}}">Add
+                                                Comment</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        {% for pitch in promotion %}
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="title">{{ pitch.actual_pitch }}..
+                                            </h4>
+
+                                            <a href="/comments/{{pitch.id}}" class="btn btn-primary">Comment</a>
+                                            <a class="btn btn-success text-center" href="/pitch/comments/new/{{pitch.id}}">Add
+                                                Comment</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

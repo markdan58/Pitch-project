@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+{% block styles %}
+{{super()}}
+{% endblock %}
+{% block content %}
+
+<h2>Add Your Pitch</h2>
+
+<!--Search block-->
+<div class="container">
+    <div class="jumbotron">
+        <form>
+            <input type="text" name="pitch_query" class="form-control">
+            <input type="submit" value="Submit" class="btn btn-default">
+        </form>
+    </div>
+</div>
+
+{% endblock%}
