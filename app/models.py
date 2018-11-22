@@ -23,6 +23,8 @@ class User(UserMixin,db.Model):
     # pass_secure = db.Column(db.String(255))
     pitch = db.relationship('Pitch',backref = 'user',lazy = "dynamic")
     user_id = db.relationship('Comment',backref = 'user',lazy = "dynamic")
+    profile_pic_path = db.Column(db.String())
+    bio = db.Column(db.String(255))
 
 
     @property
@@ -32,7 +34,6 @@ class User(UserMixin,db.Model):
     @password.setter
     def password(self, password):
         self.password_hash = generate_password_hash(password)
-
 
     def verify_password(self,password):
         return check_password_hash(self.password_hash,password)

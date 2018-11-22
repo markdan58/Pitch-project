@@ -24,7 +24,7 @@ def create_app(config_name):
 
     # Creating app configurations
     app.config.from_object(config_options[config_name])
-    # config_options[config_name].init_app(app)
+    
 
 
     # Initializing bootstrap
@@ -47,6 +47,9 @@ def create_app(config_name):
 
     # configure UploadSet
     configure_uploads(app,photos)
+
+    #mail
+    mail.init_app(app)
 
 
     return app
