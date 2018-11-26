@@ -1,36 +1,35 @@
+# Pitch Project
+#### The PITCH application allows users to login to their accounts or raegister new accounts and generate pitch and also view other peoples views and add comments to them. 
 
-# Pitches
-The PITCH application allows users to login to their accounts or raegister new accounts and generate pitch and also view other peoples views and add comments to them. 
+#### The live link to News-highlights is :
+https://project-pitchdan.herokuapp.com/
+## Installation Requirements
+* A web browser
+* A virtual environment
+* Flask
+* Internet connection
+* Terminal if you want to access the app locally through your computer
 
-## Developed By
-DANMARK
-
-## Description
-user loads the website and he/she logs into the account or reigisters if he/she doesnt have an account then he/she can add pitch according to the category he/she is interested in.Comments can also be added to whatever pitch one wants to comment. User can also edit their bio and also update their profile picture. 
-
-## Setup/Installation Requirements
-* Open the app on any web browser.
-* Sign up or login to the app.
-* Click on your preferred Pitch and add pitch or comment on someones pitch.
-* Edit profile by going to profile.
-
+#### Installation
+* Clone or download the the app from this link https://project-pitchdan.herokuapp.com/
+* Install a virtual environment in your project folder by running the following commands.
+* To activate the virtual environment run `$ source virtual/bin/activate`
+* To install Flask,run the following command `$ source virtual/bin/activate` then `python3.6 -m pip install flask`
+* In the terminal,run the app by running the following command `python3.6 run.py`
+* Run the command ng-serve to allow the app to be hosted by a local server and run.
+* Go to your browser and open the link http://localhost:5000
 ## Known Bugs
-There are currently no known bugs for the app.
-
+* Currently no bugs found.
 ## Technologies Used
-* Python 3.6 was used to develop the app.
-* Ubuntu terminal used to test the codes and run them.
-* Virtual studio for writing of the codes.
-* Flask framework was used to structure the app.
-* Postgres creation of the database
+* python3
+* Flask
+* Jinja
+* HTML
+* Bootstrap
 
 ## Support and contact details
-Incase of anything feel free to reach me out email: danmark302@gmail.com
-GITHUB:markdan58.
+For assistance and Queries please create an issue.
 
-#Lincense
-This application uses the MIT licence. Ae will be open-source 
+### License
+This application uses the MIT licence
 Copyright (c) 2018 Danmark
-
-
-

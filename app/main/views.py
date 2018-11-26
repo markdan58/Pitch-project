@@ -23,7 +23,7 @@ def index():
         flash('successfully saved')
     pitch = Pitch.query.filter_by(category='product')
     
-    pickuplines = Pitch.query.filter_by(category='pickuplines')
+    pickuplines = Pitch.query.filter_by(category='pickuplines') 
     return render_template('pitch.html',title = 'new_pitch', pitch_form=form, pitch=pitch,pickuplines=pickuplines)
 
     interview = Pitch.query.filter_by(category='interview')
