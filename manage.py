@@ -5,7 +5,7 @@ from app.models import User, Pitch, Comment
 from flask_migrate import Migrate, MigrateCommand
 
 
-app = create_app('production')
+app = create_app('development')
 
 manager = Manager(app)
 manager.add_command('server',Server)
@@ -21,7 +21,4 @@ def make_shell_context():
 
 
 if __name__ == '__main__':
-    Debug = True
     manager.run()
-    # app.debug = True
-    # app.run()

@@ -1,7 +1,7 @@
 # Pitch Project
 #### The PITCH application allows users to login to their accounts or raegister new accounts and generate pitch and also view other peoples views and add comments to them. 
 
-#### The live link to News-highlights is :
+#### The live link to Pitch-Project is :
 https://project-pitchdan.herokuapp.com/
 ## Installation Requirements
 * A web browser
